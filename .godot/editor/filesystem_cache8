@@ -1,7 +1,10 @@
 2a60927148abd1d33b818b535e306557
-::res://::1680515298
-icon.svg::CompressedTexture2D::6378357796225279004::1680512092::1680512107::1::::<><>::
-::res://Scenes/::1680515228
-Main.tscn::PackedScene::6715964645817086367::1680515228::0::1::::<><>::
-::res://thewhammycat/::1680512950
-README.md::TextFile::-1::1680512950::0::1::::<><>::
+::res://::1680523984
+icon.svg::CompressedTexture2D::6378357796225279004::1680515564::1680515625::1::::<><>::
+README.md::TextFile::-1::1680514957::0::1::::<><>::
+::res://Assets/::1680516642
+PlaceholderCharacter.png::CompressedTexture2D::1483581224016667894::1680515288::1680515625::1::::<><>::
+tilemap_packed.png::CompressedTexture2D::3305264595472684478::1664957305::1680516642::1::::<><>::
+::res://Scenes/::1680517260
+Main.tscn::PackedScene::6715964645817086367::1680517260::0::1::::<><>::res://Scenes/Player.gd<>uid://vewmpdqq02lm<>uid://bnddhwcx4g3wc
+Player.gd::GDScript::-1::1680517141::0::1::::<>CharacterBody2D<>::
