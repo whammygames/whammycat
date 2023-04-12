@@ -25,7 +25,7 @@ jobs:
         fetch-depth: 0
   
     # Set version
-    - run: echo "pre-alpha TEST.$(git rev-parse --short HEAD)" > version.tres
+    - run: echo "pre-alpha TEST.$(git rev-list --count HEAD)" > version.tres
     - name: get tag from version
       id: tag_version
       run: echo "TAG_VERSION=$(cat version.tres)" >> $GITHUB_OUTPUT
