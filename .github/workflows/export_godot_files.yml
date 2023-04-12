@@ -5,6 +5,7 @@ on:
   push:
     branch:
       - master
+      - development
 
 jobs:
   # job id, can be anything
@@ -40,7 +41,7 @@ jobs:
         relative_project_path: ./
         archive_output: true
 
-      # Create release
+    # Create release
     - name: create release
       uses: ncipollo/release-action@v1.12.0
       with:
