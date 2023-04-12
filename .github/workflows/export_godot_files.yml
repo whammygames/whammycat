@@ -41,19 +41,19 @@ jobs:
         archive_output: true
     
     # Create HTML
-    - run: pwd
-    - run: ls
-    - run: echo ${{ steps.export.outputs.archive_directory }}
-    - run: ls ${{ steps.export.outputs.archive_directory }}
-    - run: cp -r /home/runner/.local/share/godot/exports/HTML5/ .
-    - run: cp HTML5/whammycat.html HTML5/index.html
-    - run: find HTML5
-    - name: publish page
-      uses: peaceiris/actions-gh-pages@v3
-      if: ${{ github.ref == 'refs/heads/release' }}
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./HTML5
+    #- run: pwd
+    #- run: ls
+    #- run: echo ${{ steps.export.outputs.archive_directory }}
+    #- run: ls ${{ steps.export.outputs.archive_directory }}
+    #- run: cp -r /home/runner/.local/share/godot/exports/HTML5/ .
+    #- run: cp HTML5/whammycat.html HTML5/index.html
+    #- run: find HTML5
+    #- name: publish page
+    #  uses: peaceiris/actions-gh-pages@v3
+    #  if: ${{ github.ref == 'refs/heads/release' }}
+    #  with:
+    #    github_token: ${{ secrets.GITHUB_TOKEN }}
+    #    publish_dir: ./HTML5
 
     # Create release
     - name: create release
