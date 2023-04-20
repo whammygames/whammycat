@@ -41,23 +41,15 @@ jobs:
         archive_output: true
     
     # Create HTML
-    #- run: cp -r /home/runner/.local/share/godot/builds/HTML5/ .
-    #- run: cp HTML5/whammycat.html HTML5/index.html
-    #- run: find HTML5
+    #- run: cp -r /home/runner/.local/share/godot/builds/html/ .
+    #- run: cp html/whammycat.html html/index.html
+    #- run: find html
     #- name: publish page
     #  uses: peaceiris/actions-gh-pages@v3.9.3
     #  if: ${{ github.ref == 'refs/heads/testing' }}
     #  with:
     #    github_token: ${{ secrets.GITHUB_TOKEN }}
-    #    publish_dir: ./HTML5
-    
-    #- run: cp -r /home/runner/.local/share/godot/Exports/HTML/ .
-    #- run: cp HTML/whammycat.html HTML/index.html
-    #- name: publish page
-    #  uses: peaceiris/actions-gh-pages@v3.9.3
-    #  with:
-    #    github_token: ${{ secrets.GITHUB_TOKEN }}
-    #    publish_dir: ./HTML
+    #    publish_dir: ./html
 
     # Create release
     - name: create release
