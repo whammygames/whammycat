@@ -40,14 +40,17 @@ jobs:
         relative_project_path: ./
         archive_output: true
     
-    #Create HTML
-    #- run: cp -r /home/runner/.local/share/godot/Exports/HTML/ .
-    #- run: cp HTML/whammycat.html HTML/index.html
-    #- name: publish page
-    #  uses: peaceiris/actions-gh-pages@v3.9.3
-    #  with:
-    #    github_token: ${{ secrets.GITHUB_TOKEN }}
-    #    publish_dir: ./HTML
+    # Create HTML
+    - run: cp -r /home/runner/.local/share/godot/builds/Web/ html
+    - run: cp html/whammycat.html html/index.html
+    #- run: find html
+    - run: cp /home/runner/work/whammycat/whammycat/Exports/HTML/coi-serviceworker.min.js html/
+    - name: publish page
+      uses: peaceiris/actions-gh-pages@v3.9.3
+      #if: ${{ github.ref == 'refs/heads/testing' }}
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./html
 
     # Create release
     - name: create release
