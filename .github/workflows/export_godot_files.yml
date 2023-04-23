@@ -41,6 +41,7 @@ jobs:
         archive_output: true
     
     # Create HTML
+    - run: find /home
     - run: cp -r /home/runner/.local/share/godot/builds/Web/ html
     - run: cp html/whammycat.html html/index.html
     #- run: find html
