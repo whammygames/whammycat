@@ -1,13 +1,12 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const SPEED = 400.0
+const JUMP_VELOCITY = -500.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-
-var maxHorizontalSpeed = 200
+var maxHorizontalSpeed = 500
 
 
 func _physics_process(delta):
@@ -34,3 +33,8 @@ func _process(delta):
 	moveVector.x = Input.get_action_strength("Move_Right") - Input.get_action_strength("Move_Left")
 	
 	velocity.x = moveVector.x * maxHorizontalSpeed
+
+
+
+func _on_death_tree_entered():
+	get_tree().reload_current_scene()

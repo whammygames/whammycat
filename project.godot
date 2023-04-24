@@ -11,15 +11,16 @@ config_version=5
 [application]
 
 config/name="whammycat"
-run/main_scene="res://Scenes/Main.tscn"
+run/main_scene="res://Scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=500
-window/size/viewport_height=300
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/size/mode=2
+window/stretch/mode="viewport"
 window/stretch/aspect="keep_height"
 
 [input]
@@ -36,3 +37,7 @@ Move_Right={
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":68,"key_label":0,"unicode":100,"echo":false,"script":null)
 ]
 }
+
+[physics]
+
+2d/default_gravity=1000.0
