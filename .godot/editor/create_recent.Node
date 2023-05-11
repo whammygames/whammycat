@@ -1,7 +1,7 @@
-CollisionShape2D
-Sprite2D
 Button
 TextEdit
+CollisionShape2D
+Sprite2D
 VBoxContainer
 Camera2D
 TileMap

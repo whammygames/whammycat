@@ -3,4 +3,6 @@ res://Scenes/player.tscn
 res://Scenes/MainMenu.tscn
 res://Scenes/Options.tscn
 res://Scenes/Player.gd
-res://Scenes/MainMenu.gd
+res://Scenes/DeathScreen.tscn
+res://Scenes/Options.gd
+res://Scenes/Button.gd
